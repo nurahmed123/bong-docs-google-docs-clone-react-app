@@ -1,0 +1,8 @@
+.ql-script.tools-btn {
+    margin: 0px 6px;
+    color: #3c3737;
+}
+
+.ql-formats.toggle:nth-child(1) {
+    display: none;
+}
