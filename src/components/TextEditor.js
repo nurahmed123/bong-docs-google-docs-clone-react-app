@@ -33,39 +33,6 @@ export default function TextEditor() {
     }
   }, [])
 
-  const addToolBtn = () => {
-    let mainToolBar = document.querySelector(".ql-toolbar.ql-snow");
-    let newElement = document.createElement("div");
-    newElement.classList.add("toggle")
-    mainToolBar.appendChild(newElement)
-
-    let btnElement = document.createElement("span");
-    btnElement.classList.add("ql-formats");
-    newElement.appendChild(btnElement)
-
-    let toolsBtn = document.createElement("button")
-    toolsBtn.classList.add("ql-script", "tools-btn")
-    toolsBtn.value = "button"
-    toolsBtn.textContent = "Save"
-    btnElement.appendChild(toolsBtn);
-
-    let toolsBtn1 = document.createElement("button")
-    toolsBtn1.classList.add("ql-script", "tools-btn")
-    toolsBtn1.value = "button"
-    toolsBtn1.textContent = "Open"
-    btnElement.appendChild(toolsBtn1);
-
-    // const demo = document.querySelectorAll('.toggle').length;
-    // if (demo === 1) {
-    //   console.log("hello")
-    // }
-
-  }
-
-  useEffect(() => {
-    addToolBtn();
-  }, [])
-
 
   // receive typed value 
   useEffect(() => {
